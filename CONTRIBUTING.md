@@ -11,6 +11,9 @@ Documentação, issues, PRs e mensagens de commit em **português**. Identificad
 - **`main` é sempre lançável.** Nada entra direto: merge só por PR com checks verdes.
 - **Uma branch por escopo**, em kebab-case: `tipo/descricao-curta` (`feat/motor-de-score`, `fix/parse-de-estado`). Apareceu trabalho de outro escopo no meio? É outra branch.
 - **Fim de etapa = commit + PR.** Não acumule etapas num PR só. **PR acima de ~500 linhas é anti-padrão** — revisão fica superficial e o histórico, ilegível.
+- **PR aberto é PR vivo.** Título e descrição valem para o que está na branch **agora**, não para o primeiro commit. Chegou commit que amplia ou desvia o escopo? Acerte os dois antes de pedir revisão ou mergear. Não é ritual por commit: é uma releitura antes de entregar para o revisor.
+  - O título tem efeito além da revisão: no squash, PR com **mais de um commit** leva o **título do PR** para a `main` (com um só commit, prevalece a mensagem dele). Descrição velha engana quem revisa; título velho fica no histórico para sempre.
+  - As mensagens de commit não se perdem no squash — a organização usa `COMMIT_MESSAGES`, então elas vão inteiras para o corpo do commit final. O que o PR carrega sozinho é a leitura do conjunto.
 - Depois do merge, apague a branch local e a remota.
 
 ## Commits
