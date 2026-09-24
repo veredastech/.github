@@ -11,6 +11,7 @@
 ## Antes de pedir revisão
 
 - [ ] Commits no padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/), em português
+- [ ] Título e descrição descrevem o que está na branch **agora** — se entraram commits depois da abertura, releia os dois (no squash, PR com mais de um commit leva o título do PR para a `main`)
 - [ ] `CHANGELOG.md` atualizado sob `## [Não lançado]`, se a mudança for notável
 - [ ] Documentação mais próxima atualizada **no mesmo PR** — doc que descreve o comportamento antigo é pior que doc ausente
 - [ ] Nenhum dado real, credencial ou informação pessoal entrou no diff (nem em teste, nem em fixture, nem em print)
